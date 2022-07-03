@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- <div class="header">
+            <div class="navItems">
+
+        <div class="logo"><h2>PORTFOLIO</h2></div>
+       
+         
+            </div>
+            
+       </div> -->
+       <a href="#" class="logo">PORTFOLIO</a>
+       <div class="toggle" onclick="toggleMenu();"></div>
+       <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+    </header>
+    <section class="home" id="home">
+        <div class="container homeContainer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 homeImageDiv">
+                    <img src="./pngfind.com-engineer-png-6556716.png" class="homeImage"/>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-lg-6 homeNames py-5 px-4">
+                    <h2 class="name">Hello I'm <br><span class="text-info ">Arshad Ali</span></h2>
+                    <h3 class="desg">Associate Software Engineer <br>@ Cogoport</h3>
+                    <a href="https://drive.google.com/file/d/13duw1j9SumE9lHqs4ivEMVzAkzL1HR6m/view?usp=drivesdk" class="btn btn-lg btn-info mt-2 homeBtn" target="_blank">Resume <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="row content">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pt-5">
+                <div class="contentBx">
+                    <h3 class="mb-5">I am an associate software engineer</h3>
+                <p class="">I am from Bikaner, Rajasthan (India). I have completed my Bachelor of Technology degree from National Institute of Technology Hamirpur. I am also a full stack web developer. I  have done various internships  in web development. My first internship was at a startup as a software engineer intern. Where I have fixed various issues in their website in backend as well as in frontend and created some functionalities in their website. I have done competitive programming also as I am a 3 star coder at codechef. </p><br>
+                <p classs="">My hobbies are playing cricket, Netflix and chill and also playing computer games. I love building things. I love to solve problems as they are very fun to tackle. I am a team player and i love working in teams as working in teams gives me more things to learn from my colleagues. My interests are in web development and I have created various projects in web development. </p>
+                <p class="extra"></p>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 py-5 px-2 aboutImg">
+                <img src="./IMG_20220703_161255.jpg" class="aboutImage"/>
+            </div>
+        </div>
+    </section>
+    <section class="skills bg-warning" id="skills">
+        <div class="skillsHeading">
+            <h3 class="">Skills</h3>
+        </div>
+        <div class="container mb-0 pb-0 pt-3">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                    <div class="card bg-black hoverCard" style="width: 100%; height:100%">
+                        <img src="./pngegg.png" class="card-img-top cardImg p-5" alt="...">
+                        <div class="card-body">
+                          <p class="card-text text-light">React is a JavaScript library for building user interfaces. React is used to build single-page applications.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                    <div class="card bg-black hoverCard" style="width: 100%;height:100%">
+                        <img src="./nodejs.png" class="card-img-top cardImg p-5" alt="...">
+                        <div class="card-body">
+                          <p class="card-text text-white">Node.js is an open source server environment. Node.js allows you to run JavaScript on the server.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-3 ">
+                    <div class="card bg-black hoverCard" style="width: 100%; height:100%">
+                        <img src="./js.png" class="card-img-top cardImg p-5" alt="...">
+                        <div class="card-body">
+                          <p class="card-text text-light">JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-3 mb-0">
+                    <div class="card bg-black hoverCard" style="width: 100%;height:100%">
+                        <img src="./html5.png" class="card-img-top p-5  cardImg" alt="...">
+                        <div class="card-body">
+                          <p class="card-text text-light">HTML is the standard markup language for Web pages. With HTML you can create your own Website.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-3 mb-0">
+                    <div class="card bg-black hoverCard" style="width: 100%; height:100%">
+                        <img src="./css3.png" class="card-img-top cardImg p-5" alt="...">
+                        <div class="card-body">
+                          <p class="card-text text-light">CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-3 mb-0">
+                    <div class="card bg-black hoverCard" style="width: 100%;height:100%">
+                        <img src="./c++.png" class="card-img-top cardImg p-5" alt="...">
+                        <div class="card-body">
+                          <p class="card-text text-light">C++ is programming language, used to create computer programs, and is one of the most used language in game development.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="projects" id="projects">
+        <div class="headingProject mb-5">
+            <h3>Projects</h3>
+        </div>
+        <div class="container shadow p-3 mb-5 bg-body rounded hoverCard">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-6 ">
+                    <img src="./Screenshot 2022-06-30 at 2.46.53 PM.png" class="imgProject"/>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 ">
+                    <h4 class="text-center mt-3">Proshop Shopping Website</h4>
+                    <p class="px-2 my-3">It is a shopping website created using MERN stack and Redux. It has different features  like : Full featured shopping cart, Product reviews and ratings, Top products carousel, Product pagination, Product search feature, User profile with orders, Admin product management and many more...</p>
+                    <div class="text-center pt-3">
+                        <a href="https://proshopingapp.herokuapp.com/" target="_blank" class="btn  btn-dark mb-2">Project Page  <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://github.com/Aliarshad746/Proshop" target="_blank" class="btn btn-info mb-2"><i class="fa-brands fa-github"></i>  Github Page</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="container shadow p-3 mb-0 bg-body rounded hoverCard">
+            <div class="row flex-column-reverse flex-md-row">
+                
+                <div class="col-xs-12 col-sm-12 col-md-6 ">
+                    <h4 class="text-center mt-3">Covid-19 tracker</h4>
+                    <p class="px-2 my-3">It is a covid-19 tracker created using React.js. It uses an API for getting covid-19 data country-wise. It has covid-19 cases of different country and is sorted in descending order. It also has map view of differnt countries depending on cases and many more things ... </p>
+                    <div class="text-center pt-3">
+                        <a href="https://covid-19-tracker-a9a6f.web.app/" target="_blank" class="btn  btn-dark mb-2">Project Page  <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://github.com/Aliarshad746/Covid-19-tracker" target="_blank" class="btn btn-info mb-2"><i class="fa-brands fa-github"></i>  Github Page</a>
+                    </div>
+                    
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <img src="./Screenshot 2022-06-30 at 3.05.35 PM.png" class="imgProject"/>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="contact bg-dark" id="contact">
+        <div class="contactHeading ">
+            <h3 class="">Contact Information</h3>
+            <h5>Hi there! feel free to contact me</h5>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 text-light d-flex flex-column justify-center align-items-center">
+                    <div>
+                        <h5>Contact me on :</h5>
+                        <div class="py-3">
+                            <button class="btn btn-info" type="button"><i class="fa-brands fa-linkedin"></i>  LinkedIn</button>
+                        </div>
+                        <div class="py-3">
+                            <div class="btn btn-primary"><i class="fa-brands fa-facebook"></i>  Facebook</div>
+                        </div>
+                        <div class="py-3">
+                            <div class="btn btn-warning"><i class="fa-brands fa-instagram"></i>  Instagram</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-8 text-light">
+                    <form class="border border-warning p-3 hoverCard">
+                        <div class="row ">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>  
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <label for="exampleInputPassword1" class="form-label">Name</label>
+                            </div>
+                            
+
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <label for="exampleInputPassword1" class="form-label">Share Your message</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>  
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-warning"><i class="fa-solid fa-comment"></i>  Message Me</button>
+                        </div>
+                       
+                      </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script >
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY>0);
+    });
+
+    function toggleMenu(){
+        var menuToggle = document.querySelector(".toggle");
+        var menu = document.querySelector(".menu");
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+    let size = window.screen.width;
+    if(size >991){
+          gsap.from(".homeImage", {duration: 2, x: 250, opacity: 0, scale: 0.5,ease:"power2.out"});
+    }else{
+        gsap.from(".homeImage", {duration: 2, y: 150, opacity: 0, scale: 0.5,ase:"power2.out"});
+    }
+
+   
+</script>
+</body>
+</html>

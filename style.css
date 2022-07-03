@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+}
+
+header{
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding:40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+header.sticky .logo{ 
+    color:#111;
+}
+
+header.sticky ul li a{
+    color: #111;
+}
+
+header.sticky ul li a:visited{
+    color: #111;
+}
+
+.navItems{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    
+}
+header .logo {
+color: white;
+font-size: 24px;
+text-decoration: none;
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    position: relative;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header ul li a:visited{
+    color:#fff;
+}
+
+section{
+    padding: 100px;
+}
+
+.home{
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.name{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.name span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.desg{
+    font-size: 1.5em;
+    color : #fff;
+    font-weight: 500;
+}
+
+.homeImage{
+    max-height :100%;
+    max-width :100%;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.contentBx h3{
+    margin-top: 10px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contentBx p{
+    text-align: justify;
+}
+
+.aboutImage{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.skills{
+    background-color: black;
+}
+
+.skillsHeading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.skillsHeading h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+.cardBack{
+    background-color: purple;
+}
+
+.headingProject{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.headingProject h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.imgProject{
+    height: 100%;
+    width: 100%;
+}
+
+.cardImg{
+    min-height: 100;
+    min-width: 100;
+}
+
+.contactHeading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.contactHeading h3{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.hoverCard {
+    transition: transform 100ms ease-in;
+}
+.hoverCard:hover{
+    transform: scale(1.07);
+}
+
+@media (max-width : 991px){
+    header, header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu{
+        position: fixed;
+        top:75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .menu.active{
+        left:0;
+        background: #fff;
+    }
+
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    header ul li a:visited{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle{
+        width : 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor:pointer;
+    }
+    .active{
+        background: url(close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px ;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle
+    {
+        filter : invert(1);
+    }
+/* 
+    .homeImageDiv{
+        margin-left: 15%;
+    width: 65%;
+    }
+
+    .homeNames{
+        margin-left: 15%;
+    } */
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.homeImageDiv{
+        margin-left: 15%;
+    width: 65%;
+    }
+
+    .homeNames{
+        margin-left: 15%;
+    }
+
+    .aboutImg{
+        display: flex;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1439px) {
+    .homeContainer{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .homeContainer{
+        margin-top: 50px;
+    }
+
+    .homeNames{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .homeBtn{
+        position: relative;
+        right: 127px;
+    }
+
+    .desg{
+        position: relative;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    section{
+        padding: 10px;
+    }
+
+    .name{
+        font-size: 2em;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1em;
+    }
+    
+    .name span{
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+    .desg{
+        font-size: 1em;
+        color : #fff;
+        font-weight: 500;
+    }
+    
+    .homeImage{
+        margin-top: 100px;
+    }
+
+    .homeNames{
+        margin-left: 30px;
+    }
+
+    .heading{
+        margin-top: 40px;
+    }
+    .contentBx h3{
+        text-align : center
+    }
+    
+    .headingProject h3{
+        margin-top: 40px;
+    }
+
+    .contactHeading h3{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .skillsHeading h3{
+        margin-top: 40px;
+    }
+}
+
+
